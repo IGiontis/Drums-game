@@ -1,0 +1,111 @@
+:root {
+  --btn-hover-color: rgb(169, 149, 149);
+
+  --font-text-normal: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+/* Start pure code */
+
+.container {
+  height: 100vh;
+  padding-top: 5rem;
+  text-align: center;
+  background-color: rgb(157, 46, 46);
+}
+
+.header-text {
+  font-size: 2.8rem;
+  margin-bottom: 2.2rem;
+}
+
+/* Info Text */
+.info {
+  display: flex;
+  gap: 1.2rem;
+  flex-direction: column;
+}
+
+.info-text,
+.letter-text {
+  font-size: 2.2rem;
+  color: white;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 0.1rem black;
+}
+
+/* Buttons */
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 15rem;
+}
+
+.btn {
+  font-size: var(--font-text-normal);
+  padding: 1.2rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--btn-hover-color);
+  transition: all 0.2s;
+}
+
+/* Boxes */
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-text-normal);
+  color: aqua;
+  font-size: 4.2rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 2rem;
+  background-color: aliceblue;
+  border: 0.1rem solid black;
+  box-shadow: 0 0 1rem black;
+  cursor: pointer;
+}
+
+.box:hover {
+  background-color: var(--btn-hover-color);
+}
+
+.box-1 {
+  background-image: url("/Drum/images/tom1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Hide class */
+
+.hidden {
+  display: none;
+}
