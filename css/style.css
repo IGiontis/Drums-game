@@ -24,7 +24,7 @@ body {
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
   background-color: var(--text-color);
-  background-image: url("/Drum/images/drums.jpeg");
+  background-image: url("/images/drums.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -125,32 +125,32 @@ body {
 }
 
 .box-1 {
-  background-image: url("/Drum/images/tom1.png");
+  background-image: url("/images/tom1.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .box-2 {
-  background-image: url("/Drum/images/tom2.png");
+  background-image: url("/images/tom2.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .box-3 {
-  background-image: url("/Drum/images/tom3.png");
+  background-image: url("/images/tom3.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .box-4 {
-  background-image: url("/Drum/images/crash.png");
+  background-image: url("/images/crash.png");
   background-position: top;
 
   background-repeat: no-repeat;
 }
 
 .box-5 {
-  background-image: url("/Drum/images/snare.png");
+  background-image: url("/images/snare.png");
   background-position: top;
   background-repeat: no-repeat;
 }
@@ -171,4 +171,38 @@ body {
 .pressed {
   box-shadow: 0 3px 4px 0 #dbedf3;
   opacity: 0.5;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1025px) {
+  .box {
+    width: 14rem;
+    height: 14rem;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 855px) {
+  .box {
+    width: 12rem;
+    height: 12rem;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 690px) {
+  .box {
+    width: 7rem;
+    height: 7rem;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 470px) {
+  .box {
+    width: 5.5rem;
+    height: 5.5rem;
+    background-size: cover;
+  }
 }

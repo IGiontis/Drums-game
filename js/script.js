@@ -55,10 +55,8 @@ const keyPress = function () {
 
 const clickPressed = function () {
   allBoxes.forEach((value) => {
-    //   console.log(value);
     value.addEventListener("click", function (e) {
       e.preventDefault();
-      console.log(e.target.dataset.item);
       if (e.target.dataset.item === "A") box1MassUp();
       if (e.target.dataset.item === "W") box2MassUp();
       if (e.target.dataset.item === "S") box3MassUp();
