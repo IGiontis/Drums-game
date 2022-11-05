@@ -5,6 +5,7 @@
   --text-color: #d6bfbf;
   --text-letters: #ffff;
   --font-text-normal: 2rem;
+  --font-text-small: 1.2rem;
   --letter-spacing: 0.2rem;
 }
 
@@ -22,6 +23,10 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   font-family: "Nunito", sans-serif;
+  background-color: var(--text-color);
+  background-image: url("/Drum/images/drums.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Start pure code */
@@ -31,6 +36,7 @@ body {
   padding-top: 5rem;
   text-align: center;
   background-color: #581e1e;
+  opacity: 0.9;
 }
 
 .header-text {
@@ -53,6 +59,11 @@ body {
   color: var(--text-color);
   letter-spacing: var(--letter-spacing);
   text-shadow: 0 0 0.1rem black;
+  /* margin-bottom: 2rem; */
+}
+
+.letter-text {
+  margin-bottom: 2rem;
 }
 
 .letters {
@@ -67,7 +78,7 @@ body {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 
 .btn {
@@ -95,9 +106,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--font-text-normal);
-  color: aqua;
+  color: rgb(58, 28, 28);
   font-size: 4.2rem;
+  font-weight: 700;
   width: 16rem;
   height: 16rem;
   border-radius: 2rem;
@@ -142,12 +153,17 @@ body {
   background-image: url("/Drum/images/snare.png");
   background-position: top;
   background-repeat: no-repeat;
-
-  /* object-fit: contain; */
-  /* object-position: center; */
 }
-/* Hide class */
 
+.footer {
+  margin-top: 16rem;
+  font-size: var(--font-text-small);
+  color: var(--text-color);
+}
+
+/* ************************** */
+/* Classes for javascript */
+/* ************************** */
 .hidden {
   display: none;
 }

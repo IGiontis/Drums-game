@@ -33,63 +33,103 @@ const infoButton = function () {
 
 //Working on boxes and buttons
 
-// allBoxes.forEach((value) => {
-//   //   console.log(value);
-//   value.addEventListener("click", function (e) {
-//     e.preventDefault();
-//     console.log(e);
-//   });
-// });
-
 const keyPress = function () {
   window.addEventListener("keydown", function (e) {
     if (e.key === "a" || e.key === "A") {
-      const sound1 = new Audio("./sounds/crash.mp3");
-      box1.classList.add("pressed");
-
-      sound1.play();
-      setInterval(() => {
-        box1.classList.remove("pressed");
-      }, 900);
+      box1MassUp();
     }
     if (e.key === "w" || e.key === "W") {
-      const sound2 = new Audio("./sounds/crash.mp3");
-      box2.classList.add("pressed");
-
-      sound2.play();
-      setInterval(() => {
-        box2.classList.remove("pressed");
-      }, 900);
+      box2MassUp();
     }
     if (e.key === "s" || e.key === "S") {
-      const sound3 = new Audio("./sounds/crash.mp3");
-      box3.classList.add("pressed");
-
-      sound3.play();
-      setInterval(() => {
-        box3.classList.remove("pressed");
-      }, 900);
+      box3MassUp();
     }
     if (e.key === "d" || e.key === "D") {
-      const sound4 = new Audio("./sounds/crash.mp3");
-      box4.classList.add("pressed");
-
-      sound4.play();
-      setInterval(() => {
-        box4.classList.remove("pressed");
-      }, 900);
+      box4MassUp();
     }
     if (e.key === "z" || e.key === "Z") {
-      const sound5 = new Audio("./sounds/crash.mp3");
-      box5.classList.add("pressed");
-
-      sound5.play();
-      setInterval(() => {
-        box5.classList.remove("pressed");
-      }, 900);
+      box5MassUp();
     }
   });
 };
 
+const clickPressed = function () {
+  allBoxes.forEach((value) => {
+    //   console.log(value);
+    value.addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log(e.target.dataset.item);
+      if (e.target.dataset.item === "A") box1MassUp();
+      if (e.target.dataset.item === "W") box2MassUp();
+      if (e.target.dataset.item === "S") box3MassUp();
+      if (e.target.dataset.item === "D") box4MassUp();
+      if (e.target.dataset.item === "Z") box5MassUp();
+    });
+  });
+};
+
+// Functions for pressing key down
+
+const box1MassUp = function () {
+  const sound1 = new Audio("./sounds/tom-1.mp3");
+  box1.classList.add("pressed");
+  box1.style.transform = "translatey(-2rem)";
+
+  sound1.play();
+  setInterval(() => {
+    box1.classList.remove("pressed");
+    box1.style.transform = "translatey(0)";
+  }, 900);
+};
+
+const box2MassUp = function () {
+  const sound2 = new Audio("./sounds/tom-2.mp3");
+  box2.classList.add("pressed");
+  box2.style.transform = "translatey(-2rem)";
+
+  sound2.play();
+  setInterval(() => {
+    box2.classList.remove("pressed");
+    box2.style.transform = "translatey(0)";
+  }, 900);
+};
+
+const box3MassUp = function () {
+  const sound3 = new Audio("./sounds/tom-3.mp3");
+  box3.classList.add("pressed");
+  box3.style.transform = "translatey(-2rem)";
+
+  sound3.play();
+  setInterval(() => {
+    box3.classList.remove("pressed");
+    box3.style.transform = "translatey(0)";
+  }, 900);
+};
+
+const box4MassUp = function () {
+  const sound4 = new Audio("./sounds/crash.mp3");
+  box4.classList.add("pressed");
+  box4.style.transform = "translatey(-2rem)";
+
+  sound4.play();
+  setInterval(() => {
+    box4.classList.remove("pressed");
+    box4.style.transform = "translatey(0)";
+  }, 900);
+};
+
+const box5MassUp = function () {
+  const sound5 = new Audio("./sounds/snare.mp3");
+  box5.classList.add("pressed");
+  box5.style.transform = "translatey(-2rem)";
+
+  sound5.play();
+  setInterval(() => {
+    box5.classList.remove("pressed");
+    box5.style.transform = "translatey(0)";
+  }, 900);
+};
+
+clickPressed();
 infoButton();
 startGame();
