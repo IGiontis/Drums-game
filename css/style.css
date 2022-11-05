@@ -80,6 +80,7 @@ body {
 
 .btn:hover {
   background-color: var(--btn-hover-color);
+
   transition: all 0.2s;
 }
 
@@ -107,7 +108,9 @@ body {
 }
 
 .box:hover {
-  background-color: var(--btn-hover-color);
+  /* background-color: var(--btn-hover-color);
+   */
+  transform: translatey(-2rem);
 }
 
 .box-1 {
@@ -116,8 +119,40 @@ body {
   background-repeat: no-repeat;
 }
 
+.box-2 {
+  background-image: url("/Drum/images/tom2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box-3 {
+  background-image: url("/Drum/images/tom3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.box-4 {
+  background-image: url("/Drum/images/crash.png");
+  background-position: top;
+
+  background-repeat: no-repeat;
+}
+
+.box-5 {
+  background-image: url("/Drum/images/snare.png");
+  background-position: top;
+  background-repeat: no-repeat;
+
+  /* object-fit: contain; */
+  /* object-position: center; */
+}
 /* Hide class */
 
 .hidden {
   display: none;
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 #dbedf3;
+  opacity: 0.5;
 }
