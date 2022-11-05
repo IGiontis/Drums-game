@@ -1,7 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500&display=swap");
+
 :root {
   --btn-hover-color: rgb(169, 149, 149);
-
+  --text-color: #d6bfbf;
+  --text-letters: #ffff;
   --font-text-normal: 2rem;
+  --letter-spacing: 0.2rem;
 }
 
 * {
@@ -17,6 +21,7 @@ html {
 body {
   max-width: 120rem;
   margin: 0 auto;
+  font-family: "Nunito", sans-serif;
 }
 
 /* Start pure code */
@@ -25,12 +30,14 @@ body {
   height: 100vh;
   padding-top: 5rem;
   text-align: center;
-  background-color: rgb(157, 46, 46);
+  background-color: #581e1e;
 }
 
 .header-text {
   font-size: 2.8rem;
   margin-bottom: 2.2rem;
+  color: var(--text-letters);
+  letter-spacing: var(--letter-spacing);
 }
 
 /* Info Text */
@@ -42,10 +49,15 @@ body {
 
 .info-text,
 .letter-text {
-  font-size: 2.2rem;
-  color: white;
-  letter-spacing: 0.1rem;
+  font-size: 2.1rem;
+  color: var(--text-color);
+  letter-spacing: var(--letter-spacing);
   text-shadow: 0 0 0.1rem black;
+}
+
+.letters {
+  font-weight: bold;
+  color: var(--text-letters);
 }
 
 /* Buttons */
