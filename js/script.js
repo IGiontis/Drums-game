@@ -136,13 +136,19 @@ const queryMobile = function () {
     allBoxes.forEach((value) => {
       value.innerHTML = "";
     });
-    console.log("test");
+  } else {
+    allBoxes.forEach((value, i) => {
+      if (i == 0) value.innerHTML = "A";
+      if (i == 1) value.innerHTML = "W";
+      if (i == 2) value.innerHTML = "S";
+      if (i == 3) value.innerHTML = "D";
+      if (i == 4) value.innerHTML = "Z";
+    });
   }
 };
-
+window.addEventListener("resize", queryMobile, false);
 queryMobile();
 // end of query
-
 clickPressed();
 infoButton();
 startGame();
