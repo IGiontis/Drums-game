@@ -131,7 +131,7 @@ const box5MassUp = function () {
 // Media query for letters
 const queryMobile = function () {
   let mobileLetterHide = window.matchMedia("(max-width: 600px)");
-  console.log(mobileLetterHide);
+
   if (mobileLetterHide.matches) {
     allBoxes.forEach((value) => {
       value.innerHTML = "";
