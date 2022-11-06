@@ -128,6 +128,21 @@ const box5MassUp = function () {
   }, 900);
 };
 
+// Media query for letters
+const queryMobile = function () {
+  let mobileLetterHide = window.matchMedia("(max-width: 600px)");
+  console.log(mobileLetterHide);
+  if (mobileLetterHide.matches) {
+    allBoxes.forEach((value) => {
+      value.innerHTML = "";
+    });
+    console.log("test");
+  }
+};
+
+queryMobile();
+// end of query
+
 clickPressed();
 infoButton();
 startGame();

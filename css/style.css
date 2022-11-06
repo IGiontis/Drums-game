@@ -180,6 +180,7 @@ body {
     width: 14rem;
     height: 14rem;
     background-size: cover;
+    font-size: 4.1rem;
   }
 }
 
@@ -188,6 +189,7 @@ body {
     width: 12rem;
     height: 12rem;
     background-size: cover;
+    font-size: 3.8rem;
   }
 }
 
@@ -196,6 +198,11 @@ body {
     width: 7rem;
     height: 7rem;
     background-size: cover;
+    font-size: 2.5rem;
+  }
+  .info-text,
+  .letter-text {
+    font-size: 1.2rem;
   }
 }
 
@@ -204,5 +211,6 @@ body {
     width: 5.5rem;
     height: 5.5rem;
     background-size: cover;
+    font-size: 1.2rem;
   }
 }
